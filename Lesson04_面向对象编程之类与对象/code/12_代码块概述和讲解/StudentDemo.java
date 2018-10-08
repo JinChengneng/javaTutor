@@ -1,0 +1,36 @@
+/*
+	写程序的执行结果。
+	又到吃饭时间了，我很开心
+	我是main方法
+	Student 静态代码块
+	Student 构造代码块
+	Student 构造方法
+	Student 构造代码块
+	Student 构造方法
+*/
+class Student {
+	static {
+		System.out.println("Student 静态代码块");
+	}
+	
+	{
+		System.out.println("Student 构造代码块");
+	}
+	
+	public Student() {
+		System.out.println("Student 构造方法");
+	}
+}
+
+class StudentDemo {
+	static {
+		System.out.println("又到吃饭时间了，我很开心");
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("我是main方法");
+		
+		Student s1 = new Student();
+		Student s2 = new Student();
+	}
+}
